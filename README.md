@@ -1,6 +1,6 @@
 # chatgpt-webapi
 
-This project uses EdgeGPT to provide an API endpoint similar to the official text completion endpoint.
+This project uses EdgeGPT and therefore Bing's ChatGPT4 chat functionality to provide an API endpoint similar to the official text completion endpoint of OpenAI.
 
 ## Dependencies
 
@@ -17,6 +17,9 @@ Activate the environment and install the dependencies
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+
+## cookie.json
+Please read the information on <https://github.com/acheong08/EdgeGPT> how to obtain a valid cookie.json.
 
 ## API endpoints
 
