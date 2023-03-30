@@ -1,0 +1,14 @@
+version: "3.6"
+services:
+    chatgpt4-webapi:
+         image: chatgpt4-webapi/chatgpt4-webapi:latest
+         build:
+            context: .
+            dockerfile: Dockerfile
+         container_name: chatgpt4-webapi
+         volumes:
+            - ./cookie.json:/app/cookie.json
+         ports:
+            - 8001:8001
+         
+         restart: unless-stopped
